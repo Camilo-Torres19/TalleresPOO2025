@@ -1,16 +1,16 @@
 public class Producto{
     String nombre;
-    int precio;
+    double precio;
     int stock;
 
-    public Producto(String nombre, int precio, int stock){
+    public Producto(String nombre, double precio, int stock){
         this.nombre = nombre;
         this.precio = precio;
         this.stock = stock;
     }
 
-    public String mostrarInfo(){
-        return "Producto = "+nombre+" costo = $"+precio+" Und. en bodega = "+stock;
+    void mostrarInfo(){
+        System.out.println("Producto = "+nombre+" costo = $"+precio+" Und. en bodega = "+stock);
     }
     
     }
